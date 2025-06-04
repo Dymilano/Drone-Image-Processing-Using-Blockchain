@@ -1,7 +1,9 @@
 # Drone-Image-Processing-Using-Blockchain
 Drone-Image-Processing-Using-Blockchain
 
-📡 ỨNG DỤNG BLOCKCHAIN PHÁT HIỆN, NHẬN DIỆN, ĐẾM NGƯỜI TRONG KHU VỰC BẰNG DRONE
+📡 BLOCKCHAIN ​​APPLICATION TO DETECTING, IDENTIFYING, COUNTING PEOPLE IN AREA BY DRONE
+(ỨNG DỤNG BLOCKCHAIN PHÁT HIỆN, NHẬN DIỆN, ĐẾM NGƯỜI TRONG KHU VỰC BẰNG DRONE)
+
 📌 Giới thiệu chung
 Dự án kết hợp công nghệ Drone, trí tuệ nhân tạo (YOLOv8) và Blockchain để phát hiện, nhận diện, đếm số lượng người trong khu vực được giám sát. Kết quả AI (số người, phần trăm, thời gian, vị trí GPS) được ghi lại trên blockchain Ethereum testnet nhằm đảm bảo tính bất biến, minh bạch và xác minh được.
 
