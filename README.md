@@ -1,4 +1,4 @@
-# Drone-Image-Processing-Using-Blockchain
+# ỨNG DỤNG BLOCKCHAIN PHÁT HIỆN, NHẬN DIỆN, ĐẾM NGƯỜI TRONG KHU VỰC BẰNG DRONE
 Drone-Image-Processing-Using-Blockchain
 
 📡 BLOCKCHAIN ​​APPLICATION TO DETECTING, IDENTIFYING, COUNTING PEOPLE IN AREA BY DRONE
