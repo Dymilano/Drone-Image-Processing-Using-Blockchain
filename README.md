@@ -1,108 +1,123 @@
-# ỨNG DỤNG BLOCKCHAIN PHÁT HIỆN, NHẬN DIỆN, ĐẾM NGƯỜI TRONG KHU VỰC BẰNG DRONE
-Drone-Image-Processing-Using-Blockchain
+
+#
 
 📡 BLOCKCHAIN ​​APPLICATION TO DETECTING, IDENTIFYING, COUNTING PEOPLE IN AREA BY DRONE
-(ỨNG DỤNG BLOCKCHAIN PHÁT HIỆN, NHẬN DIỆN, ĐẾM NGƯỜI TRONG KHU VỰC BẰNG DRONE)
+----------------------------------------------------------------------------------
 
-📌 Giới thiệu chung
-Dự án kết hợp công nghệ Drone, trí tuệ nhân tạo (YOLOv8) và Blockchain để phát hiện, nhận diện, đếm số lượng người trong khu vực được giám sát. Kết quả AI (số người, phần trăm, thời gian, vị trí GPS) được ghi lại trên blockchain Ethereum testnet nhằm đảm bảo tính bất biến, minh bạch và xác minh được.
 
-🔒 Mọi kết quả đếm người đều được xác thực bằng hợp đồng thông minh trên Ethereum.
+📡 ỨNG DỤNG BLOCKCHAIN PHÁT HIỆN, NHẬN DIỆN, ĐẾM NGƯỜI TRONG KHU VỰC BẰNG DRONE  
+🔍 Giới thiệu  
+Dự án là một hệ thống tích hợp giữa Drone, AI (YOLOv8) và công nghệ Blockchain, nhằm giám sát khu vực từ trên cao, nhận diện và đếm số lượng người, sau đó ghi kết quả lên Blockchain để đảm bảo minh bạch, không thể chỉnh sửa.  
+#
+Hệ thống bao gồm:    
+Drone: quay video từ trên cao, truyền về máy tính.  
 
-🧭 Sơ đồ hệ thống và chức năng
-mermaid
-Sao chép
-Chỉnh sửa
-graph TD
-    A[Drone gắn ESP32-CAM] -->|Chụp ảnh/video| B[ESP32 WiFi]
-    B -->|Truyền dữ liệu TCP| C[Laptop chạy YOLOv8]
-    C -->|Phân tích AI YOLOv8| D[Web Flask Dashboard]
-    D -->|Gửi kết quả JSON| E[Smart Contract trên Blockchain]
-🔧 Chức năng chính:
-📷 Drone thu ảnh/video từ trên cao
+YOLOv8 (AI): xử lý ảnh/video để nhận diện và đếm người.  
 
-🧠 AI YOLOv8 xử lý ảnh → phát hiện và đếm người
+Flask Web App: giao diện cho phép tải video/livestream, xem kết quả phân tích.  
 
-📈 Tính phần trăm có người trên khung hình
+Blockchain (Ethereum Smart Contract): lưu trữ kết quả đếm người (số lượng, % nhận diện, thời gian, hash ảnh/video).  
 
-⏱ Ghi nhận thời gian phân tích
+#
+🧠 Công nghệ sử dụng  
 
-🌐 Giao diện web Flask để tải video, chụp ảnh, xem kết quả
+Drone: ESP32-CAM, F405 flight controller, GPS M1018C.  
 
-🔗 Ghi dữ liệu lên Blockchain Ethereum testnet
+AI: YOLOv8 (Ultralytics), Python, OpenCV, Flask.  
 
-⚙️ Công nghệ sử dụng
-Thành phần	Công nghệ
-Phần cứng	Drone F450, ESC 30A, động cơ 1000KV, GPS M1018C, ESP32-CAM, ESP32 WiFi, mạch bay F405
-AI & xử lý ảnh	Python, YOLOv8 (Ultralytics), OpenCV, NumPy
-Web server	Flask, HTML5, Bootstrap, Chart.js
-Blockchain	Solidity, Remix IDE, Sepolia Ethereum Testnet, Web3.py
-Truyền dữ liệu	TCP Socket ESP32 ↔ Laptop
+Blockchain: Solidity Smart Contract, Remix IDE, Ethereum Testnet (Sepolia).  
 
-🧪 Hướng dẫn cài đặt & chạy
-1. Cài đặt AI trên laptop
-bash
-Sao chép
-Chỉnh sửa
-git clone https://github.com/<your-username>/drone-image-blockchain.git
-cd flask_app
-pip install -r requirements.txt
-2. Chạy web Flask và YOLOv8
-bash
-Sao chép
-Chỉnh sửa
-python app.py
-Vào http://localhost:5000
+Giao tiếp: TCP/IP giữa ESP32 WiFi và laptop.  
 
-Chọn: "Tải video lên", "Phân tích ảnh", hoặc "Xem kết quả"
+#
+⚙️ Chức năng chính  
 
-Kết quả sẽ được lưu vào blockchain khi nhấn Gửi lên blockchain
+✅ Nhận diện người trong ảnh hoặc video từ drone.  
 
-3. Cấu hình hợp đồng thông minh (Remix IDE)
-Tải file PeopleCounter.sol trong thư mục blockchain/
+✅ Đếm số lượng người trong mỗi khung hình.  
 
-Deploy trên Remix với testnet Sepolia
+✅ Tính phần trăm người xuất hiện trong vùng quan sát.  
+ 
+✅ Ghi lại kết quả (số người, % nhận diện, timestamp, hash ảnh/video) lên Blockchain.  
 
-Copy địa chỉ contract vào Flask (config.py) để kết nối
+✅ Hiển thị kết quả trực quan trên giao diện Flask Web.  
 
-🖼 Giao diện (Bạn tự thêm hình)
-Livestream từ drone
+✅ Cho phép sử dụng video tải lên hoặc livestream từ điện thoại qua RTMP (Larix).  
 
-Phân tích video và chụp ảnh
+#
+🖥️ Giao diện web Flask  
 
-Biểu đồ số người & phần trăm
+ Phân tích ảnh hoặc video.  
+ 
+ Livestream từ điện thoại qua RTMP (Larix).  
+ 
+ Nút chụp ảnh từ livestream.  
+ 
+ Hiển thị kết quả AI.  
+ 
+ Tự động ghi dữ liệu lên Blockchain.  
+ 
+#
+🧪 Mục tiêu thực nghiệm  
 
-Lịch sử phân tích + liên kết blockchain
+Phát hiện và đếm người trong khu vực quan sát từ độ cao 10–20m.  
 
-📁 Cấu trúc thư mục
-csharp
-Sao chép
-Chỉnh sửa
-drone-image-processing-using-blockchain/
-├── esp32_cam/                # Mã ESP32-CAM
-├── esp32_wifi/               # Mã ESP32 WiFi truyền ảnh và GPS
-├── flask_app/                # Flask web + YOLOv8
-│   ├── app.py
-│   └── templates/, static/
-├── blockchain/
-│   └── PeopleCounter.sol     # Hợp đồng thông minh
-├── models/
-│   └── best.pt               # Mô hình YOLOv8
-├── README.md
-✅ Kết quả đạt được
-Nhận diện chính xác người từ ảnh/video drone ở độ cao 10–20m
+Phân tích độ chính xác nhận diện trong điều kiện ánh sáng khác nhau.  
 
-Phân tích được cả trong điều kiện ánh sáng yếu
+Ghi nhận kết quả, thời gian, hash video lên Ethereum blockchain.  
 
-Kết quả được ghi lại trên Blockchain, không thể thay đổi
+#
+📦 Cấu trúc dự án  
 
-Giao diện dễ sử dụng, phù hợp mở rộng thương mại hóa
+bash  
 
-📚 Tài liệu tham khảo
-YOLOv8: https://docs.ultralytics.com
+Sao chép  
 
-Blockchain Remix IDE: https://remix.ethereum.org
+Chỉnh sửa  
 
-Web3.py: https://web3py.readthedocs.io
+📂 droneviewpeoplecounteryolov8/  
 
-Drone ESP32-CAM: https://randomnerdtutorials.com
+├── app.py              # Web Flask  
+
+├── main.py             # Phân tích video YOLOv8  
+
+├── tracker.py          # Theo dõi đối tượng  
+
+├── static/             # Frontend assets  
+
+├── templates/          # HTML giao diện  
+
+├── contracts/          # Smart contract (Solidity)  
+
+├── uploads/            # Ảnh/video đầu vào  
+
+└── README.md           # (file này)  
+
+🛠️ Công nghệ và kỹ thuật sử dụng  
+#
+🧱 Phần cứng:  
+
+ESP32-CAM (gắn camera OV2640, chụp ảnh từ trên cao).  
+
+ESP32 WiFi module (giao tiếp TCP/IP với laptop).  
+
+F405 Flight Controller + GPS M1018C (cung cấp dữ liệu điều hướng, vị trí).  
+
+Drone khung F450, động cơ 1000KV, ESC 30A, cánh 10x45 inch.  
+#
+🧠 Phần mềm:  
+
+AI Model: YOLOv8 (Ultralytics).  
+
+Lập trình AI: Python, OpenCV, NumPy.  
+
+Web Giao diện: Flask, HTML/CSS, JavaScript, Chart.js.  
+
+Blockchain: Solidity Smart Contract, Ethereum (Sepolia testnet), Remix IDE, web3.py.  
+
+
+
+#
+📈 Kết quả  
+
+Hệ thống đã được thử nghiệm ngoài thực tế, cho phép nhận diện chính xác người trong video drone quay từ trên cao, và xác thực kết quả qua Ethereum blockchain.  
