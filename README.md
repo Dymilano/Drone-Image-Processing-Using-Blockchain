@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/3a839658-edf4-4284-ae42-f8cc9ba1c0fb)
+
 
 #
 
@@ -92,29 +94,81 @@ Chỉnh sửa
 ├── uploads/            # Ảnh/video đầu vào  
 
 └── README.md           # (file này)  
-
+#
 🛠️ Công nghệ và kỹ thuật sử dụng  
+
 #
 🧱 Phần cứng:  
+| Thành phần                                    | Mô tả chức năng                                                                      |
+| --------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **ESP32-CAM**                                 | Module tích hợp camera OV2640, gắn lên drone để chụp ảnh hoặc quay video từ trên cao |
+| **ESP32 WiFi**                                | Nhận ảnh từ ESP32-CAM qua UART hoặc TCP, sau đó truyền về laptop qua mạng WiFi       |
+| **F405 Flight Controller**                    | Điều khiển drone, truyền dữ liệu GPS, độ cao, khoảng cách cho ESP32 WiFi             |
+| **GPS M1018C**                                | Cung cấp tọa độ vị trí thực tế cho kết quả AI                                        |
+| **Drone Kit F450**                            | Khung máy bay với 4 động cơ không chổi than 1000KV, ESC 30A, pin LiPo 3S/4S          |
+| **Điện thoại + Larix Broadcaster** (tuỳ chọn) | Truyền livestream video từ drone về Flask Web App qua RTMP                           |
 
-ESP32-CAM (gắn camera OV2640, chụp ảnh từ trên cao).  
-
-ESP32 WiFi module (giao tiếp TCP/IP với laptop).  
-
-F405 Flight Controller + GPS M1018C (cung cấp dữ liệu điều hướng, vị trí).  
-
-Drone khung F450, động cơ 1000KV, ESC 30A, cánh 10x45 inch.  
 #
 🧠 Phần mềm:  
 
-AI Model: YOLOv8 (Ultralytics).  
+| Thành phần               | Mục đích sử dụng                                                                          |
+| ------------------------ | ----------------------------------------------------------------------------------------- |
+| **YOLOv8 (Ultralytics)** | Mô hình AI học sâu dùng để phát hiện và đếm người trong ảnh/video từ drone                |
+| **Python**               | Ngôn ngữ chính điều khiển xử lý ảnh, socket TCP, web backend và kết nối blockchain        |
+| **OpenCV**               | Thư viện xử lý ảnh: đọc ảnh, hiển thị, annotate kết quả (bounding box, nhãn người)        |
+| **Flask**                | Web framework nhẹ dùng để xây dựng giao diện người dùng, upload video, nhận ảnh từ stream |
+| **Chart.js**             | Hiển thị biểu đồ số lượng người, phần trăm nhận diện, theo thời gian                      |
+| **web3.py**              | Thư viện Python kết nối với Ethereum Blockchain và gọi Smart Contract                     |
+| **ffmpeg / RTMP**        | Hỗ trợ streaming video từ điện thoại (hoặc camera IP) về server Flask                     |
+| **Remix IDE**            | IDE dùng để viết, biên dịch và triển khai Smart Contract trên Ethereum testnet (Sepolia)  |
+| **Solidity**             | Ngôn ngữ dùng để viết hợp đồng thông minh (Smart Contract) lưu dữ liệu AI lên blockchain  |
 
-Lập trình AI: Python, OpenCV, NumPy.  
+#
+Blockchain  
+| Thành phần                   | Mô tả                                                                                                          |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Ethereum Sepolia Testnet** | Mạng blockchain thử nghiệm dùng để lưu kết quả phân tích AI (số người, thời gian, % nhận diện, hash ảnh/video) |
+| **Smart Contract Solidity**  | Hợp đồng thông minh được viết để ghi dữ liệu phân tích, đảm bảo minh bạch và không chỉnh sửa                   |
+| **Dữ liệu ghi lại**          | Timestamp, số người, phần trăm nhận diện, kiểu dữ liệu (ảnh/video), mã hash ảnh/video (SHA256/IPFS tùy chọn)   |
 
-Web Giao diện: Flask, HTML/CSS, JavaScript, Chart.js.  
 
-Blockchain: Solidity Smart Contract, Ethereum (Sepolia testnet), Remix IDE, web3.py.  
 
+#
+Sơ đồ hệ thống  
+
+![image](https://github.com/user-attachments/assets/0e0c2e92-94e6-4b6c-b470-b5cb6bbdac81)
+
+#
+Thư viện đã sử dụng   trong dự án của:  
+- Smart Contract (Solidity):    
++ Solidity phiên bản ^0.8.0    
++ Contract PeopleCounter.sol để lưu trữ và quản lý dữ liệu phân tích  
+- Python Libraries:  
++ flask: Framework web để xây dựng API và giao diện web  
++ opencv-python: Xử lý hình ảnh và video  
++ ultralytics: Thư viện YOLOv8 cho việc phát hiện đối tượng  
++ pandas: Xử lý và phân tích dữ liệu  
++ numpy: Tính toán số học và xử lý mảng  
++ cvzone: Thư viện hỗ trợ xử lý hình ảnh và video  
++ web3: Tương tác với blockchain Ethereum  
++ eth-account: Quản lý tài khoản Ethereum  
+- Các file và tài nguyên khác:  
++ yolov8s.pt: Model YOLOv8 đã được train  
++ coco.txt: File chứa các class labels cho model  
++ Các file Python chính:  
++ app.py: File chính của ứng dụng Flask  
++ blockchain.py: Xử lý tương tác với blockchain  
++ tracker.py: Theo dõi và đếm người  
++ main.py: File khởi động chính  
+- Cấu trúc thư mục:  
++ templates/: Chứa các file template HTML  
++ static/: Chứa các file tĩnh (CSS, JS, images)  
++ contracts/: Chứa các smart contract  
++ .venv/: Môi trường ảo Python  
+
+#
+GIAO DIỆN
+![image](https://github.com/user-attachments/assets/eddb8bac-453f-4d6a-b762-10f3a614fe1e)
 
 
 #
