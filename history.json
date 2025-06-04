@@ -1,0 +1,1752 @@
+[
+  {
+    "filename": "20250602_005014_0000155_01201_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 00:56:39",
+    "max_people": 7,
+    "avg_people": 7.0,
+    "link": "/analyze_image/20250602_005014_0000155_01201_d_0000001.jpg",
+    "file_hash": "f35446d673c5342f543ac011e2b931f9c51b14659e9f5d6a22f6220efc7fc9b8",
+    "boxed_image": "/static/captures%5C20250602_005014_0000155_01201_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      70,
+      35,
+      23,
+      17,
+      14,
+      10,
+      7,
+      7
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      7
+    ]
+  },
+  {
+    "filename": "20250602_010049_0000086_01084_d_0000003.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:00:49",
+    "max_people": 23,
+    "avg_people": 23.0,
+    "link": "/analyze_image/20250602_010049_0000086_01084_d_0000003.jpg",
+    "file_hash": "85ceb00280c7e5e460a8e08e58a88e40c3b0d3bd23f6be932369184c154f0a35",
+    "boxed_image": "/static/captures%5C20250602_010049_0000086_01084_d_0000003_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      76,
+      57,
+      46,
+      32,
+      25,
+      23
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      23
+    ]
+  },
+  {
+    "filename": "20250602_010202_0000024_00000_d_0000012.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:02:03",
+    "max_people": 11,
+    "avg_people": 11.0,
+    "link": "/analyze_image/20250602_010202_0000024_00000_d_0000012.jpg",
+    "file_hash": "943bc63643293d864d0181611abc4cf7468a67cfe9cf01ab0723046d278202bd",
+    "boxed_image": "/static/captures%5C20250602_010202_0000024_00000_d_0000012_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      55,
+      36,
+      27,
+      22,
+      15,
+      12,
+      11
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      11
+    ]
+  },
+  {
+    "filename": "20250602_011147_0000021_00000_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:11:47",
+    "max_people": 10,
+    "avg_people": 10.0,
+    "link": "/analyze_image/20250602_011147_0000021_00000_d_0000001.jpg",
+    "file_hash": "75fdfa4790236cee64f2e0cba7be9d1693648a07346de5e8858fc3c8c8d0b82a",
+    "boxed_image": "/static/captures%5C20250602_011147_0000021_00000_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      50,
+      33,
+      25,
+      20,
+      14,
+      11,
+      10
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      10
+    ]
+  },
+  {
+    "filename": "20250602_011427_0000081_00000_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:14:28",
+    "max_people": 15,
+    "avg_people": 15.0,
+    "link": "/analyze_image/20250602_011427_0000081_00000_d_0000001.jpg",
+    "file_hash": "8abd9bf8d15795b244616996a3a7679afbed89d08e1bebf88edfefe15892edf4",
+    "boxed_image": "/static/captures%5C20250602_011427_0000081_00000_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      75,
+      50,
+      37,
+      30,
+      21,
+      16,
+      15
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      15
+    ]
+  },
+  {
+    "filename": "20250602_011427_0000081_00000_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:19:04",
+    "max_people": 15,
+    "avg_people": 15.0,
+    "link": "/analyze_image/20250602_011427_0000081_00000_d_0000001.jpg",
+    "file_hash": "8abd9bf8d15795b244616996a3a7679afbed89d08e1bebf88edfefe15892edf4",
+    "boxed_image": "/static/captures%5C20250602_011427_0000081_00000_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      75,
+      50,
+      37,
+      30,
+      21,
+      16,
+      15
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      15
+    ]
+  },
+  {
+    "filename": "20250602_011427_0000081_00000_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:19:12",
+    "max_people": 15,
+    "avg_people": 15.0,
+    "link": "/analyze_image/20250602_011427_0000081_00000_d_0000001.jpg",
+    "file_hash": "8abd9bf8d15795b244616996a3a7679afbed89d08e1bebf88edfefe15892edf4",
+    "boxed_image": "/static/captures%5C20250602_011427_0000081_00000_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      75,
+      50,
+      37,
+      30,
+      21,
+      16,
+      15
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      15
+    ]
+  },
+  {
+    "filename": "20250602_005014_0000155_01201_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:19:16",
+    "max_people": 7,
+    "avg_people": 7.0,
+    "link": "/analyze_image/20250602_005014_0000155_01201_d_0000001.jpg",
+    "file_hash": "f35446d673c5342f543ac011e2b931f9c51b14659e9f5d6a22f6220efc7fc9b8",
+    "boxed_image": "/static/captures%5C20250602_005014_0000155_01201_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      70,
+      35,
+      23,
+      17,
+      14,
+      10,
+      7,
+      7
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      7
+    ]
+  },
+  {
+    "filename": "20250602_013604_0000023_01233_d_0000011.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:36:05",
+    "max_people": 10,
+    "avg_people": 10.0,
+    "link": "/analyze_image/20250602_013604_0000023_01233_d_0000011.jpg",
+    "file_hash": "0745a2292c92123fbce7d8e314cc11e1dd3ea3e6cbb9aeb216de479a71c7a7cd",
+    "boxed_image": "/static/captures%5C20250602_013604_0000023_01233_d_0000011_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      50,
+      33,
+      25,
+      20,
+      14,
+      11,
+      10
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      10
+    ]
+  },
+  {
+    "filename": "20250602_011427_0000081_00000_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-02 01:36:20",
+    "max_people": 15,
+    "avg_people": 15.0,
+    "link": "/analyze_image/20250602_011427_0000081_00000_d_0000001.jpg",
+    "file_hash": "8abd9bf8d15795b244616996a3a7679afbed89d08e1bebf88edfefe15892edf4",
+    "boxed_image": "/static/captures%5C20250602_011427_0000081_00000_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      75,
+      50,
+      37,
+      30,
+      21,
+      16,
+      15
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      15
+    ]
+  },
+  {
+    "filename": "20250602_204045_0000024_00000_d_0000012.jpg",
+    "type": "image",
+    "time": "2025-06-02 20:40:47",
+    "max_people": 11,
+    "avg_people": 11.0,
+    "link": "/analyze_image/20250602_204045_0000024_00000_d_0000012.jpg",
+    "file_hash": "943bc63643293d864d0181611abc4cf7468a67cfe9cf01ab0723046d278202bd",
+    "boxed_image": "/static/captures%5C20250602_204045_0000024_00000_d_0000012_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      55,
+      36,
+      27,
+      22,
+      15,
+      12,
+      11
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      11
+    ]
+  },
+  {
+    "filename": "20250602_204045_0000024_00000_d_0000012.jpg",
+    "type": "image",
+    "time": "2025-06-02 21:10:53",
+    "max_people": 11,
+    "avg_people": 11.0,
+    "link": "/analyze_image/20250602_204045_0000024_00000_d_0000012.jpg",
+    "file_hash": "943bc63643293d864d0181611abc4cf7468a67cfe9cf01ab0723046d278202bd",
+    "boxed_image": "/static/captures%5C20250602_204045_0000024_00000_d_0000012_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      55,
+      36,
+      27,
+      22,
+      15,
+      12,
+      11
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      11
+    ]
+  },
+  {
+    "filename": "20250602_211142_0000024_00000_d_0000012.jpg",
+    "type": "image",
+    "time": "2025-06-02 21:11:43",
+    "max_people": 11,
+    "avg_people": 11.0,
+    "link": "/analyze_image/20250602_211142_0000024_00000_d_0000012.jpg",
+    "file_hash": "943bc63643293d864d0181611abc4cf7468a67cfe9cf01ab0723046d278202bd",
+    "boxed_image": "/static/captures%5C20250602_211142_0000024_00000_d_0000012_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      55,
+      36,
+      27,
+      22,
+      15,
+      12,
+      11
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      11
+    ]
+  },
+  {
+    "filename": "20250602_204045_0000024_00000_d_0000012.jpg",
+    "type": "image",
+    "time": "2025-06-02 21:12:06",
+    "max_people": 11,
+    "avg_people": 11.0,
+    "link": "/analyze_image/20250602_204045_0000024_00000_d_0000012.jpg",
+    "file_hash": "943bc63643293d864d0181611abc4cf7468a67cfe9cf01ab0723046d278202bd",
+    "boxed_image": "/static/captures%5C20250602_204045_0000024_00000_d_0000012_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      55,
+      36,
+      27,
+      22,
+      15,
+      12,
+      11
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      11
+    ]
+  },
+  {
+    "filename": "20250603_203020_0000001_02999_d_0000005.jpg",
+    "type": "image",
+    "time": "2025-06-03 20:30:22",
+    "max_people": 2,
+    "avg_people": 2.0,
+    "link": "/analyze_image/20250603_203020_0000001_02999_d_0000005.jpg",
+    "file_hash": "fc80a9305b38af026091cbe0a1d4cfe059964852253b93f01fee17b7443e5514",
+    "boxed_image": "/static/captures%5C20250603_203020_0000001_02999_d_0000005_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      20,
+      10,
+      6,
+      5,
+      4,
+      2,
+      2,
+      2
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      2
+    ]
+  },
+  {
+    "filename": "20250603_211448_88.JPG",
+    "type": "image",
+    "time": "2025-06-03 21:14:49",
+    "max_people": 36,
+    "avg_people": 36.0,
+    "link": "/analyze_image/20250603_211448_88.JPG",
+    "file_hash": "4fe5f85fbef21f76773ffe9e19da05e12cfc1c0c9dfdf133983fc720eeeb046d",
+    "boxed_image": "/static/captures%5C20250603_211448_88_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      100,
+      90,
+      72,
+      51,
+      40,
+      36
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      36
+    ]
+  },
+  {
+    "filename": "20250603_211638_14.JPG",
+    "type": "image",
+    "time": "2025-06-03 21:16:39",
+    "max_people": 16,
+    "avg_people": 16.0,
+    "link": "/analyze_image/20250603_211638_14.JPG",
+    "file_hash": "ca5d8ff0250d197d2e79d7351a71d81d15667d549553b214bc63d10f7c8bf6b0",
+    "boxed_image": "/static/captures%5C20250603_211638_14_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      80,
+      53,
+      40,
+      32,
+      22,
+      17,
+      16
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      16
+    ]
+  },
+  {
+    "filename": "20250603_211638_14.JPG",
+    "type": "image",
+    "time": "2025-06-03 21:20:47",
+    "max_people": 16,
+    "avg_people": 16.0,
+    "link": "/analyze_image/20250603_211638_14.JPG",
+    "file_hash": "ca5d8ff0250d197d2e79d7351a71d81d15667d549553b214bc63d10f7c8bf6b0",
+    "boxed_image": "/static/captures%5C20250603_211638_14_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      80,
+      53,
+      40,
+      32,
+      22,
+      17,
+      16
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      16
+    ]
+  },
+  {
+    "filename": "20250603_211638_14.JPG",
+    "type": "image",
+    "time": "2025-06-03 21:25:22",
+    "max_people": 16,
+    "avg_people": 16.0,
+    "link": "/analyze_image/20250603_211638_14.JPG",
+    "file_hash": "ca5d8ff0250d197d2e79d7351a71d81d15667d549553b214bc63d10f7c8bf6b0",
+    "boxed_image": "/static/captures%5C20250603_211638_14_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      80,
+      53,
+      40,
+      32,
+      22,
+      17,
+      16
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      16
+    ]
+  },
+  {
+    "filename": "20250603_212535_0000103_00502_d_0000027.jpg",
+    "type": "image",
+    "time": "2025-06-03 21:25:35",
+    "max_people": 2,
+    "avg_people": 2.0,
+    "link": "/analyze_image/20250603_212535_0000103_00502_d_0000027.jpg",
+    "file_hash": "d95a33ae383a092618c201f56916a92f0fa7a6b85694a9ec21933d428b6e45bc",
+    "boxed_image": "/static/captures%5C20250603_212535_0000103_00502_d_0000027_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      20,
+      10,
+      6,
+      5,
+      4,
+      2,
+      2,
+      2
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      2
+    ]
+  },
+  {
+    "filename": "20250603_212903_14.JPG",
+    "type": "image",
+    "time": "2025-06-03 21:29:04",
+    "max_people": 16,
+    "avg_people": 16.0,
+    "link": "/analyze_image/20250603_212903_14.JPG",
+    "file_hash": "ca5d8ff0250d197d2e79d7351a71d81d15667d549553b214bc63d10f7c8bf6b0",
+    "boxed_image": "/static/captures/20250603_212903_14_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      80,
+      53,
+      40,
+      32,
+      22,
+      17,
+      16
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      16
+    ]
+  },
+  {
+    "filename": "20250603_213818_0000086_00592_d_0000002.jpg",
+    "type": "image",
+    "time": "2025-06-03 21:38:18",
+    "max_people": 28,
+    "avg_people": 28.0,
+    "link": "/analyze_image/20250603_213818_0000086_00592_d_0000002.jpg",
+    "file_hash": "2ef2cc4b0d13bbd04a524d3a44639884a3eac8f88ec04342674b56e79aa844f2",
+    "boxed_image": "/static/captures/20250603_213818_0000086_00592_d_0000002_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      93,
+      70,
+      56,
+      40,
+      31,
+      28
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      28
+    ]
+  },
+  {
+    "filename": "20250603_213836_0000103_01734_d_0000028.jpg",
+    "type": "image",
+    "time": "2025-06-03 21:38:36",
+    "max_people": 1,
+    "avg_people": 1.0,
+    "link": "/analyze_image/20250603_213836_0000103_01734_d_0000028.jpg",
+    "file_hash": "17ef972a75056f32b27b849596e8fedec70b4150dc3479a9cd0de039ee0e4fb2",
+    "boxed_image": "/static/captures/20250603_213836_0000103_01734_d_0000028_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      10,
+      5,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      1
+    ]
+  },
+  {
+    "filename": "20250603_213847_0000360_00785_d_0000717.jpg",
+    "type": "image",
+    "time": "2025-06-03 21:38:47",
+    "max_people": 3,
+    "avg_people": 3.0,
+    "link": "/analyze_image/20250603_213847_0000360_00785_d_0000717.jpg",
+    "file_hash": "bc338652f1c35bc2f6d8b536fa944f81d1b85386d74ede6c8b1b913cb0203700",
+    "boxed_image": "/static/captures/20250603_213847_0000360_00785_d_0000717_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      30,
+      15,
+      10,
+      7,
+      6,
+      4,
+      3,
+      3
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      3
+    ]
+  },
+  {
+    "filename": "20250603_213902_Capture1.JPG",
+    "type": "image",
+    "time": "2025-06-03 21:39:03",
+    "max_people": 37,
+    "avg_people": 37.0,
+    "link": "/analyze_image/20250603_213902_Capture1.JPG",
+    "file_hash": "e562b432578a1e0ee03c02e747f3ba9087f08a1102f32a97eb68bad1060dec73",
+    "boxed_image": "/static/captures/20250603_213902_Capture1_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      100,
+      92,
+      74,
+      52,
+      41,
+      37
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      37
+    ]
+  },
+  {
+    "filename": "20250604_004223_00.JPG",
+    "type": "image",
+    "time": "2025-06-04 00:42:24",
+    "max_people": 5,
+    "avg_people": 5.0,
+    "link": "/analyze_image/20250604_004223_00.JPG",
+    "file_hash": "965a6f412d69155b4bd1c5646178cd1d734586f7e12cef9e8ff9168166d8de18",
+    "boxed_image": "/static/captures/20250604_004223_00_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      50,
+      25,
+      16,
+      12,
+      10,
+      7,
+      5,
+      5
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      5
+    ]
+  },
+  {
+    "filename": "20250604_004242.jpg",
+    "type": "image",
+    "time": "2025-06-04 00:42:43",
+    "max_people": 1,
+    "avg_people": 1.0,
+    "link": "/analyze_image/20250604_004242.jpg",
+    "file_hash": "affe927c3908ec92a058edcb46a6416994a8dcc8ad5e981b683ede93815497f5",
+    "boxed_image": "/static/captures/20250604_004242_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      10,
+      5,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      1
+    ]
+  },
+  {
+    "filename": "20250604_004255.jpg",
+    "type": "image",
+    "time": "2025-06-04 00:42:55",
+    "max_people": 0,
+    "avg_people": 0.0,
+    "link": "/analyze_image/20250604_004255.jpg",
+    "file_hash": "bd79258c9a73d369106311ac5525463fe1dd675ddb9c5139339d664e59b66df1",
+    "boxed_image": "/static/captures/20250604_004255_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      0
+    ]
+  },
+  {
+    "filename": "20250604_010445_0000024_00000_d_0000012.jpg",
+    "type": "image",
+    "time": "2025-06-04 01:04:46",
+    "max_people": 11,
+    "avg_people": 11.0,
+    "link": "/analyze_image/20250604_010445_0000024_00000_d_0000012.jpg",
+    "file_hash": "943bc63643293d864d0181611abc4cf7468a67cfe9cf01ab0723046d278202bd",
+    "boxed_image": "/static/captures/20250604_010445_0000024_00000_d_0000012_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      55,
+      36,
+      27,
+      22,
+      15,
+      12,
+      11
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      11
+    ]
+  },
+  {
+    "filename": "20250604_010505_IMG_2371.JPG",
+    "type": "image",
+    "time": "2025-06-04 01:05:05",
+    "max_people": 3,
+    "avg_people": 3.0,
+    "link": "/analyze_image/20250604_010505_IMG_2371.JPG",
+    "file_hash": "0a80a384927492cccd8c4d50f8c043f33d97aaff5f6675c9498966bf36f76874",
+    "boxed_image": "/static/captures/20250604_010505_IMG_2371_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      30,
+      15,
+      10,
+      7,
+      6,
+      4,
+      3,
+      3
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      3
+    ]
+  },
+  {
+    "filename": "20250604_010524_IMG_2474.JPG",
+    "type": "image",
+    "time": "2025-06-04 01:05:25",
+    "max_people": 9,
+    "avg_people": 9.0,
+    "link": "/analyze_image/20250604_010524_IMG_2474.JPG",
+    "file_hash": "8c15aafcbe0bf2ca809f07a7dd89d714f7210b1d81c77e690a6d18e4ea653c9d",
+    "boxed_image": "/static/captures/20250604_010524_IMG_2474_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      90,
+      45,
+      30,
+      22,
+      18,
+      12,
+      10,
+      9
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      9
+    ]
+  },
+  {
+    "filename": "20250604_010552_IMG_7181.JPG",
+    "type": "image",
+    "time": "2025-06-04 01:05:52",
+    "max_people": 5,
+    "avg_people": 5.0,
+    "link": "/analyze_image/20250604_010552_IMG_7181.JPG",
+    "file_hash": "f4f407d42a76ab7454cb532018041f08d806cad6a94d2cd9f17249e5c591801c",
+    "boxed_image": "/static/captures/20250604_010552_IMG_7181_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      50,
+      25,
+      16,
+      12,
+      10,
+      7,
+      5,
+      5
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      5
+    ]
+  },
+  {
+    "filename": "20250604_101505_00.JPG",
+    "type": "image",
+    "time": "2025-06-04 10:15:07",
+    "max_people": 5,
+    "avg_people": 5.0,
+    "link": "/analyze_image/20250604_101505_00.JPG",
+    "file_hash": "965a6f412d69155b4bd1c5646178cd1d734586f7e12cef9e8ff9168166d8de18",
+    "boxed_image": "/static/captures/20250604_101505_00_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      50,
+      25,
+      16,
+      12,
+      10,
+      7,
+      5,
+      5
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      5
+    ]
+  },
+  {
+    "filename": "20250604_101540_0000069_00001_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-04 10:15:41",
+    "max_people": 17,
+    "avg_people": 17.0,
+    "link": "/analyze_image/20250604_101540_0000069_00001_d_0000001.jpg",
+    "file_hash": "ac5ce22939d6a63d7463549176432bcacb725cb307902d142c531becc7f4f839",
+    "boxed_image": "/static/captures/20250604_101540_0000069_00001_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      85,
+      56,
+      42,
+      34,
+      24,
+      18,
+      17
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      17
+    ]
+  },
+  {
+    "filename": "20250604_101613_0000069_00001_d_0000001.jpg",
+    "type": "image",
+    "time": "2025-06-04 10:16:13",
+    "max_people": 17,
+    "avg_people": 17.0,
+    "link": "/analyze_image/20250604_101613_0000069_00001_d_0000001.jpg",
+    "file_hash": "ac5ce22939d6a63d7463549176432bcacb725cb307902d142c531becc7f4f839",
+    "boxed_image": "/static/captures/20250604_101613_0000069_00001_d_0000001_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      85,
+      56,
+      42,
+      34,
+      24,
+      18,
+      17
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      17
+    ]
+  },
+  {
+    "filename": "20250604_101715_88.JPG",
+    "type": "image",
+    "time": "2025-06-04 10:17:16",
+    "max_people": 36,
+    "avg_people": 36.0,
+    "link": "/analyze_image/20250604_101715_88.JPG",
+    "file_hash": "4fe5f85fbef21f76773ffe9e19da05e12cfc1c0c9dfdf133983fc720eeeb046d",
+    "boxed_image": "/static/captures/20250604_101715_88_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      100,
+      90,
+      72,
+      51,
+      40,
+      36
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      36
+    ]
+  },
+  {
+    "filename": "20250604_134638_88.JPG",
+    "type": "image",
+    "time": "2025-06-04 13:46:40",
+    "max_people": 36,
+    "avg_people": 36.0,
+    "link": "/analyze_image/20250604_134638_88.JPG",
+    "file_hash": "4fe5f85fbef21f76773ffe9e19da05e12cfc1c0c9dfdf133983fc720eeeb046d",
+    "boxed_image": "/static/captures/20250604_134638_88_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      100,
+      90,
+      72,
+      51,
+      40,
+      36
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      36
+    ]
+  },
+  {
+    "filename": "20250604_101715_88.JPG",
+    "type": "image",
+    "time": "2025-06-04 13:46:48",
+    "max_people": 36,
+    "avg_people": 36.0,
+    "link": "/analyze_image/20250604_101715_88.JPG",
+    "file_hash": "4fe5f85fbef21f76773ffe9e19da05e12cfc1c0c9dfdf133983fc720eeeb046d",
+    "boxed_image": "/static/captures/20250604_101715_88_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      100,
+      90,
+      72,
+      51,
+      40,
+      36
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      36
+    ]
+  },
+  {
+    "filename": "20250604_141515_145.JPG",
+    "type": "image",
+    "time": "2025-06-04 14:15:17",
+    "max_people": 20,
+    "avg_people": 20.0,
+    "link": "/analyze_image/20250604_141515_145.JPG",
+    "file_hash": "4eb633b5abe17e93e9c518fc38841b6ba50cf982f6749144cb20f2e0dcbdc2ac",
+    "boxed_image": "/static/captures/20250604_141515_145_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      66,
+      50,
+      40,
+      28,
+      22,
+      20
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      20
+    ]
+  },
+  {
+    "filename": "20250604_141514_145.JPG",
+    "type": "image",
+    "time": "2025-06-04 14:15:17",
+    "max_people": 20,
+    "avg_people": 20.0,
+    "link": "/analyze_image/20250604_141514_145.JPG",
+    "file_hash": "4eb633b5abe17e93e9c518fc38841b6ba50cf982f6749144cb20f2e0dcbdc2ac",
+    "boxed_image": "/static/captures/20250604_141514_145_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      66,
+      50,
+      40,
+      28,
+      22,
+      20
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      20
+    ]
+  },
+  {
+    "filename": "20250604_101715_88.JPG",
+    "type": "image",
+    "time": "2025-06-04 14:15:44",
+    "max_people": 36,
+    "avg_people": 36.0,
+    "link": "/analyze_image/20250604_101715_88.JPG",
+    "file_hash": "4fe5f85fbef21f76773ffe9e19da05e12cfc1c0c9dfdf133983fc720eeeb046d",
+    "boxed_image": "/static/captures/20250604_101715_88_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      100,
+      90,
+      72,
+      51,
+      40,
+      36
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      36
+    ]
+  },
+  {
+    "filename": "20250604_141700_34.JPG",
+    "type": "image",
+    "time": "2025-06-04 14:17:00",
+    "max_people": 2,
+    "avg_people": 2.0,
+    "link": "/analyze_image/20250604_141700_34.JPG",
+    "file_hash": "e6920de3b0c9d33edad2f85138cf575bebca4a43bbb35fdcda8505dd1ecd74f8",
+    "boxed_image": "/static/captures/20250604_141700_34_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      20,
+      10,
+      6,
+      5,
+      4,
+      2,
+      2,
+      2
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      2
+    ]
+  },
+  {
+    "filename": "20250604_181831_90.JPG",
+    "type": "image",
+    "time": "2025-06-04 18:18:33",
+    "max_people": 27,
+    "avg_people": 27.0,
+    "link": "/analyze_image/20250604_181831_90.JPG",
+    "file_hash": "d727e7a6e6519078a3a16b0c9eb9f7ceace39e15a254f1d2053b3d03556bc4bd",
+    "boxed_image": "/static/captures/20250604_181831_90_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      90,
+      67,
+      54,
+      38,
+      30,
+      27
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      27
+    ]
+  },
+  {
+    "filename": "20250604_182214_IMG_7000.JPG",
+    "type": "image",
+    "time": "2025-06-04 18:22:14",
+    "max_people": 13,
+    "avg_people": 13.0,
+    "link": "/analyze_image/20250604_182214_IMG_7000.JPG",
+    "file_hash": "4a5c1aa45fc50dd44a48257110c56937af4b6ba0ddcacad2f429a7aeac8b6054",
+    "boxed_image": "/static/captures/20250604_182214_IMG_7000_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      65,
+      43,
+      32,
+      26,
+      18,
+      14,
+      13
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      13
+    ]
+  },
+  {
+    "filename": "20250604_182222_IMG_7000.JPG",
+    "type": "image",
+    "time": "2025-06-04 18:22:23",
+    "max_people": 13,
+    "avg_people": 13.0,
+    "link": "/analyze_image/20250604_182222_IMG_7000.JPG",
+    "file_hash": "4a5c1aa45fc50dd44a48257110c56937af4b6ba0ddcacad2f429a7aeac8b6054",
+    "boxed_image": "/static/captures/20250604_182222_IMG_7000_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      65,
+      43,
+      32,
+      26,
+      18,
+      14,
+      13
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      13
+    ]
+  },
+  {
+    "filename": "20250604_184540_IMG_7015.JPG",
+    "type": "image",
+    "time": "2025-06-04 18:45:40",
+    "max_people": 21,
+    "avg_people": 21.0,
+    "link": "/analyze_image/20250604_184540_IMG_7015.JPG",
+    "file_hash": "662a98a8077103950e1c3e3c4c3498b823fda9a4464083d75120a07f3a2fe94d",
+    "boxed_image": "/static/captures/20250604_184540_IMG_7015_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      100,
+      70,
+      52,
+      42,
+      30,
+      23,
+      21
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      21
+    ]
+  },
+  {
+    "filename": "20250604_190129_IMG_6988.JPG",
+    "type": "image",
+    "time": "2025-06-04 19:01:29",
+    "max_people": 13,
+    "avg_people": 13.0,
+    "link": "/analyze_image/20250604_190129_IMG_6988.JPG",
+    "file_hash": "afa0ff4a1a3f21fb7776f9e2148e72fe7376f8e9e218fc30f524b884e7605957",
+    "boxed_image": "/static/captures/20250604_190129_IMG_6988_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      65,
+      43,
+      32,
+      26,
+      18,
+      14,
+      13
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      13
+    ]
+  },
+  {
+    "filename": "20250604_192319_IMG_6982.JPG",
+    "type": "image",
+    "time": "2025-06-04 19:23:22",
+    "max_people": 14,
+    "avg_people": 14.0,
+    "link": "/analyze_image/20250604_192319_IMG_6982.JPG",
+    "file_hash": "1fa2db1c9d5dbdbd6f89f8a8fb41818798d9957ba86897f20994eb7da29574e3",
+    "boxed_image": "/static/captures/20250604_192319_IMG_6982_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      70,
+      46,
+      35,
+      28,
+      20,
+      15,
+      14
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      14
+    ]
+  },
+  {
+    "filename": "20250604_202300_99.JPG",
+    "type": "image",
+    "time": "2025-06-04 20:23:01",
+    "max_people": 0,
+    "avg_people": 0.0,
+    "link": "/analyze_image/20250604_202300_99.JPG",
+    "file_hash": "559e758fbdc026a314a8ca46a2fc6357b4ea3e00a63482307afdea7886c135a2",
+    "boxed_image": "/static/captures/20250604_202300_99_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      0
+    ]
+  },
+  {
+    "filename": "20250604_202317_Capture13.JPG",
+    "type": "image",
+    "time": "2025-06-04 20:23:18",
+    "max_people": 12,
+    "avg_people": 12.0,
+    "link": "/analyze_image/20250604_202317_Capture13.JPG",
+    "file_hash": "994f0b2355c45df0097418557c420ee91ce0956873bfafd5951b6e018ed69467",
+    "boxed_image": "/static/captures/20250604_202317_Capture13_boxed.jpg",
+    "percent_levels": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      90,
+      100
+    ],
+    "percent_results": [
+      100,
+      60,
+      40,
+      30,
+      24,
+      17,
+      13,
+      12
+    ],
+    "frame_count": 1,
+    "duration": 0,
+    "people_counts": [
+      12
+    ]
+  }
+]

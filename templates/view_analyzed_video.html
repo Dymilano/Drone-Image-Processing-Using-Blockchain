@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đang phân tích video...</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px; /* Tăng chiều rộng container */
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+         .history-table-container {
+            max-height: 400px; /* Giới hạn chiều cao */
+            overflow-y: auto; /* Thêm thanh cuộn khi cần */
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+         /* Ẩn phần hiển thị kết quả ban đầu */
+         #analysis-results { display: none; }
+         #analysis-results .col-md-6 { padding: 10px; }
+        .video-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="container py-4">
+    <h1 class="text-center mb-4">Phân tích video trực tiếp</h1>
+
+    <div class="card">
+        <div class="card-header">Video đang phân tích</div>
+        <div class="card-body">
+            <p><strong>File:</strong> {{ filename }}</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-container mb-3">
+                        <span id="live-people-overlay" class="video-overlay">Đang nhận diện...</span>
+                        <img id="analyzed-video" src="{{ url_for('analyzed_video_feed', filename=filename) }}" alt="Video đang phân tích">
+                    </div>
+                    <div id="analysis-status">
+                         <p>Video đang được xử lý...</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Khu vực hiển thị kết quả phân tích cuối cùng -->
+                     <div id="analysis-results" style="display:none">
+                         <h5>Kết quả phân tích:</h5>
+                         <ul class="list-group mb-3">
+                             <li class="list-group-item">Số frame: <span id="frame-count"></span></li>
+                             <li class="list-group-item">Số người lớn nhất: <span id="max-people"></span></li>
+                             <li class="list-group-item">Số người trung bình / frame: <span id="avg-people"></span></li>
+                             <li class="list-group-item">Thời gian phân tích: <span id="duration"></span> giây</li>
+                             <li class="list-group-item">Hash file: <span id="file-hash"></span></li>
+                         </ul>
+                         <h5>Phần trăm số người theo các mức:</h5>
+                         <ul class="list-group mb-3" id="percent-results"></ul>
+                         <h5>Biểu đồ số người theo frame:</h5>
+                         <canvas id="peopleChart" width="400" height="200"></canvas>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="card">
+        <div class="card-header">Lịch sử phân tích</div>
+        <div class="card-body">
+             <div class="history-table-container">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Loại</th>
+                            <th>Tên file</th>
+                            <th>Số người</th>
+                            <th>Trung bình</th>
+                            <th>Xem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in history|reverse %}
+                        <tr>
+                            <td>{{ item.time }}</td>
+                            <td>{{ item.type }}</td>
+                            <td>{{ item.filename }}</td>
+                            <td>{{ item.max_people }}</td>
+                            <td>{{ item.avg_people|round(2) }}</td>
+                            <td><a href="{{ item.link }}" class="btn btn-info btn-sm">Xem</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <a href="/livestream_iphone" class="btn btn-danger">Nhận diện trực tiếp từ iPhone (Larix)</a>
+    </div>
+
+    <a href="/" class="btn btn-secondary mt-3">Quay lại trang chủ</a>
+
+     <script>
+         const videoElement = document.getElementById('analyzed-video');
+         const statusDiv = document.getElementById('analysis-status');
+         const resultsDiv = document.getElementById('analysis-results');
+         const filename = "{{ filename }}";
+
+         // Biến để lưu instance của Chart.js
+         let peopleChart = null;
+         // Biến để lưu kết quả phân tích khi nhận được
+         let analysisFinalResult = null;
+
+         // Overlay số người trực tiếp (giả lập: polling kết quả cuối cùng, lấy số người lớn nhất chia đều cho frame)
+         let livePeopleInterval = null;
+         function startLivePeopleOverlay() {
+             const overlay = document.getElementById('live-people-overlay');
+             let idx = 0;
+             function updateOverlay() {
+                 if (analysisFinalResult && analysisFinalResult.people_counts) {
+                     // Lấy số người từng frame nếu có
+                     if (idx < analysisFinalResult.people_counts.length) {
+                         overlay.innerText = `Số người: ${analysisFinalResult.people_counts[idx]}`;
+                         idx++;
+                     } else {
+                         overlay.innerText = `Số người: ${analysisFinalResult.people_counts[analysisFinalResult.people_counts.length-1]}`;
+                     }
+                 } else {
+                     overlay.innerText = 'Đang nhận diện...';
+                 }
+             }
+             livePeopleInterval = setInterval(updateOverlay, 100);
+         }
+         // Khi có kết quả cuối cùng, dừng overlay động
+         function stopLivePeopleOverlay() {
+             if (livePeopleInterval) clearInterval(livePeopleInterval);
+         }
+
+         // Hàm cập nhật kết quả và biểu đồ
+         function updateAnalysisResults(result) {
+             document.getElementById('frame-count').innerText = result.frame_count;
+             document.getElementById('max-people').innerText = result.max_people;
+             document.getElementById('avg-people').innerText = result.avg_people.toFixed(2);
+             document.getElementById('duration').innerText = result.duration.toFixed(2);
+             document.getElementById('file-hash').innerText = result.file_hash;
+
+             const percentList = document.getElementById('percent-results');
+             percentList.innerHTML = ''; // Xóa kết quả cũ
+             for (let i = 0; i < result.percent_levels.length; i++) {
+                 const listItem = document.createElement('li');
+                 listItem.className = 'list-group-item';
+                 listItem.innerText = `${result.max_people}/${result.percent_levels[i]}: ${result.percent_results[i]}%`;
+                 percentList.appendChild(listItem);
+             }
+
+             // Vẽ biểu đồ
+             const ctx = document.getElementById('peopleChart').getContext('2d');
+
+             // Hủy biểu đồ cũ nếu tồn tại
+             if (peopleChart) {
+                 peopleChart.destroy();
+             }
+
+             peopleChart = new Chart(ctx, {
+                 type: 'line',
+                 data: {
+                     labels: Array.from({length: result.people_counts.length}, (_, i) => i+1),
+                     datasets: [{
+                         label: 'Số người mỗi frame',
+                         data: result.people_counts,
+                         borderColor: 'rgb(75, 192, 192)',
+                         tension: 0.1
+                     }]
+                 },
+                 options: {
+                     responsive: true,
+                     plugins: {
+                         legend: { display: true }
+                     },
+                     scales: {
+                         x: { title: { display: true, text: 'Frame' } },
+                         y: { title: { display: true, text: 'Số người' }, beginAtZero: true }
+                     }
+                 }
+             });
+
+             // Hiển thị khu vực kết quả
+             resultsDiv.style.display = 'block';
+
+         }
+
+         // Hàm kiểm tra kết quả phân tích cuối cùng bằng AJAX
+         function checkAnalysisResults() {
+             fetch(`/get_video_analysis_results/${filename}`)
+             .then(response => response.json())
+             .then(data => {
+                 if (data.status && data.status === 'processing') {
+                     setTimeout(checkAnalysisResults, 2000);
+                 } else {
+                     analysisFinalResult = data;
+                     document.getElementById('analysis-status').style.display = 'none';
+                     // Hiển thị kết quả luôn khi có dữ liệu
+                     updateAnalysisResults(analysisFinalResult);
+                     document.getElementById('analysis-results').style.display = 'block';
+                 }
+             })
+             .catch(error => {
+                 document.getElementById('analysis-status').innerHTML = '<p style="color: red;">Đã xảy ra lỗi khi tải kết quả.</p>';
+             });
+         }
+
+         // Bắt đầu polling khi trang được tải
+         checkAnalysisResults();
+         startLivePeopleOverlay();
+
+     </script>
+
+</body>
+</html> 

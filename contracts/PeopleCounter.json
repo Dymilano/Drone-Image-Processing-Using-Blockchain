@@ -1,0 +1,173 @@
+{
+    "abi": [
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "peopleCount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[8]",
+                    "name": "percentLevels",
+                    "type": "uint256[8]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "sourceType",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "fileHash",
+                    "type": "string"
+                }
+            ],
+            "name": "Analyzed",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_peopleCount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256[8]",
+                    "name": "_percentLevels",
+                    "type": "uint256[8]"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_sourceType",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_fileHash",
+                    "type": "string"
+                }
+            ],
+            "name": "addAnalysis",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "analyses",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "peopleCount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256[8]",
+                    "name": "percentLevels",
+                    "type": "uint256[8]"
+                },
+                {
+                    "internalType": "string",
+                    "name": "sourceType",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "fileHash",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getCount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "idx",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getAnalysis",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "timestamp",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "peopleCount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256[8]",
+                            "name": "percentLevels",
+                            "type": "uint256[8]"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "sourceType",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "fileHash",
+                            "type": "string"
+                        }
+                    ],
+                    "internalType": "struct PeopleCounter.Analysis",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+} 

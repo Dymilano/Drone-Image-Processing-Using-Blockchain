@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả phân tích</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+         .history-table-container {
+            max-height: 400px; /* Giới hạn chiều cao */
+            overflow-y: auto; /* Thêm thanh cuộn khi cần */
+        }
+    </style>
+</head>
+<body class="container py-4">
+    <h1 class="text-center mb-4">Kết quả phân tích</h1>
+
+    <div class="card">
+        <div class="card-header">Chi tiết phân tích</div>
+        <div class="card-body">
+            <p><strong>File:</strong> {{ filename }}</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                     {% if result.boxed_image %}
+                        <h5>Ảnh đã khoanh vùng người:</h5>
+                        <img src="{{ result.boxed_image }}" class="img-fluid mb-3" alt="Ảnh đã khoanh vùng">
+                    {% endif %}
+                    <h5>Số liệu phân tích:</h5>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">Số frame: {{ result.frame_count }}</li>
+                        <li class="list-group-item">Số người lớn nhất: {{ result.max_people }}</li>
+                        <li class="list-group-item">Số người trung bình / frame: {{ result.avg_people|round(2) }}</li>
+                        <li class="list-group-item">Thời gian phân tích: {{ result.duration|round(2) }} giây</li>
+                        <li class="list-group-item">Hash file: {{ result.file_hash }}</li>
+                    </ul>
+                </div>
+                 <div class="col-md-6">
+                    <h5>Phần trăm số người theo các mức:</h5>
+                    <ul class="list-group mb-3">
+                        {% for i in range(result.percent_levels|length) %}
+                        <li class="list-group-item">{{ result.max_people }}/{{ result.percent_levels[i] }}: {{ result.percent_results[i] }}%</li>
+                        {% endfor %}
+                    </ul>
+                     <h5>Biểu đồ số người theo frame:</h5>
+                    <canvas id="peopleChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">Lịch sử phân tích</div>
+        <div class="card-body">
+             <div class="history-table-container">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Loại</th>
+                            <th>Tên file</th>
+                            <th>Số người</th>
+                            <th>Trung bình</th>
+                            <th>Xem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in history|reverse %}
+                        <tr>
+                            <td>{{ item.time }}</td>
+                            <td>{{ item.type }}</td>
+                            <td>{{ item.filename }}</td>
+                            <td>{{ item.max_people }}</td>
+                            <td>{{ item.avg_people|round(2) }}</td>
+                            <td><a href="{{ item.link }}" class="btn btn-info btn-sm">Xem</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <a href="/" class="btn btn-secondary mt-3">Quay lại trang chủ</a>
+
+    <script>
+        const ctx = document.getElementById('peopleChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: Array.from({length: {{ result.people_counts|length }}}, (_, i) => i+1),
+                datasets: [{
+                    label: 'Số người mỗi frame',
+                    data: {{ result.people_counts|tojson }},
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: true }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Frame' } },
+                    y: { title: { display: true, text: 'Số người' }, beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

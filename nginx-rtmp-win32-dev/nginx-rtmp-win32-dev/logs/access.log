@@ -1,0 +1,35 @@
+192.168.1.9 [30/May/2025:00:45:26 +0700] PUBLISH "live" "stream" "" - 138209186 409 "" "FMLE/3.0 (compatible; Larix/1.7" (8m 54s)
+127.0.0.1 - - [30/May/2025:00:50:06 +0700] "GET /stat HTTP/1.1" 200 647 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:06 +0700] "GET /stat.xsl HTTP/1.1" 200 11765 "http://localhost:8081/stat" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:06 +0700] "GET /favicon.ico HTTP/1.1" 404 571 "http://localhost:8081/stat" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:15 +0700] "GET /stat HTTP/1.1" 200 1400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:16 +0700] "GET /stat HTTP/1.1" 200 1400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:18 +0700] "GET /stat HTTP/1.1" 200 1408 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:19 +0700] "GET /stat HTTP/1.1" 200 1407 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:36 +0700] "GET /stat HTTP/1.1" 200 1427 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:00:50:37 +0700] "GET /stat HTTP/1.1" 200 1425 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+192.168.1.9 [30/May/2025:00:57:52 +0700] PUBLISH "live" "stream" "" - 281265724 409 "" "FMLE/3.0 (compatible; Larix/1.7" (7m 42s)
+127.0.0.1 [30/May/2025:00:58:22 +0700] PLAY "live" "stream" "" - 1034 209715888 "" "LNX 9,0,124,2" (6m 14s)
+127.0.0.1 - - [30/May/2025:01:06:46 +0700] "GET /stat HTTP/1.1" 200 653 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:01:30:50 +0700] "GET /stat HTTP/1.1" 200 1438 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+192.168.1.9 [30/May/2025:01:31:27 +0700] PUBLISH "live" "stream" "" - 470842094 409 "" "FMLE/3.0 (compatible; Larix/1.7" (12m 53s)
+192.168.1.9 [30/May/2025:01:32:38 +0700] PUBLISH "live" "stream" "" - 8822384 409 "" "FMLE/3.0 (compatible; Larix/1.7" (14s)
+192.168.1.9 [30/May/2025:01:33:41 +0700] PUBLISH "live" "stream" "" - 12075991 409 "" "FMLE/3.0 (compatible; Larix/1.7" (20s)
+192.168.1.9 [30/May/2025:01:34:22 +0700] PUBLISH "live" "stream" "" - 2603058 409 "" "FMLE/3.0 (compatible; Larix/1.7" (4s)
+192.168.1.11 [30/May/2025:01:44:56 +0700] PLAY "live" "stream" "" - 375 5841919 "" "LNX 9,0,124,2" (2m 5s)
+127.0.0.1 - - [30/May/2025:01:45:23 +0700] "GET /stat HTTP/1.1" 200 1443 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/May/2025:01:45:24 +0700] "GET /stat HTTP/1.1" 200 1443 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+192.168.1.9 [30/May/2025:01:48:37 +0700] PUBLISH "live" "stream" "" - 317801116 409 "" "FMLE/3.0 (compatible; Larix/1.7" (8m 41s)
+192.168.1.9 [30/May/2025:01:49:19 +0700] PUBLISH "live" "stream" "" - 12908440 409 "" "FMLE/3.0 (compatible; Larix/1.7" (21s)
+127.0.0.1 [04/Jun/2025:00:46:02 +0700] PLAY "live" "stream" "" - 414 5963739 "" "LNX 9,0,124,2" (10s)
+127.0.0.1 [04/Jun/2025:00:47:38 +0700] PLAY "live" "stream" "" - 442 11106655 "" "LNX 9,0,124,2" (1m 34s)
+127.0.0.1 [04/Jun/2025:00:54:52 +0700] PLAY "live" "stream" "" - 440 29296013 "" "LNX 9,0,124,2" (4m 21s)
+192.168.1.8 [04/Jun/2025:00:55:35 +0700] PUBLISH "live" "stream" "" - 438400475 409 "" "FMLE/3.0 (compatible; Larix/1.7" (12m 0s)
+127.0.0.1 [04/Jun/2025:01:07:32 +0700] PLAY "live" "stream" "" - 414 576355 "" "LNX 9,0,124,2" (0s)
+127.0.0.1 [04/Jun/2025:01:07:44 +0700] PLAY "live" "stream" "" - 414 586017 "" "LNX 9,0,124,2" (1s)
+127.0.0.1 [04/Jun/2025:01:08:26 +0700] PLAY "live" "stream" "" - 414 559827 "" "LNX 9,0,124,2" (2s)
+192.168.1.8 [04/Jun/2025:01:08:33 +0700] PUBLISH "live" "stream" "" - 47004259 409 "" "FMLE/3.0 (compatible; Larix/1.7" (1m 17s)
+127.0.0.1 [04/Jun/2025:01:08:45 +0700] PLAY "live" "stream" "" - 434 11921197 "" "LNX 9,0,124,2" (1m 38s)
+127.0.0.1 [04/Jun/2025:01:09:09 +0700] PLAY "live" "stream" "" - 372 436 "" "LNX 9,0,124,2" (29s)
+127.0.0.1 [04/Jun/2025:01:22:57 +0700] PLAY "live" "stream" "" - 372 436 "" "LNX 9,0,124,2" (29s)
+127.0.0.1 [04/Jun/2025:01:48:04 +0700] PLAY "live" "stream" "" - 372 436 "" "LNX 9,0,124,2" (10s)
